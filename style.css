@@ -1,0 +1,82 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background: #35251f;
+  text-align: center;
+  padding: 20px;
+}
+
+h1 {
+  color: beige;
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+header {
+  margin-bottom: 40px;
+}
+nav {
+  margin-bottom: 20px;
+}
+
+.filter-btn {
+  padding: 10px 20px;
+  margin: 5px;
+  border: none;
+  background: beige;
+  color: #35251f;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+.filter-btn:hover {
+  background: #555;
+}
+
+/* Galeria */
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 15px;
+  padding: 10px;
+}
+
+/* Imagens */
+.image {
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.image img {
+  width: 100%;
+  display: block;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+  width: 100%;
+  height: 200px; /* Definição uma altura fixa */
+  object-fit: cover; /* Garante que a imagem preencha o espaço sem distorcer */
+  display: block;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+/* Efeito de zoom ao passar o mouse */
+.image:hover img {
+  transform: scale(1.5);
+}
+
+/* Rodapé */
+footer {
+  margin-top: 20px;
+  padding: 10px;
+  background: #333;
+  color: white;
+  font-size: 0.9rem;
+}
